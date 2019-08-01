@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en_us" ng-app="simpsonsApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>All About The Simpsons</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="simpsons-list/simpsons-list.module.js"></script>
+    <script src="simpsons-list/simpsons-list.component.js"></script>
+    <script src="simpsons-detail/simpsons-detail.module.js"></script>
+    <script src="simpsons-detail/simpsons-detail.component.js"></script>
+    <script src="show-list/show-list.module.js"></script>
+    <script src="show-list/show-list.component.js"></script>
+    <script src="nav1/nav1.module.js"></script>
+    <script src="nav1/nav1.component.js"></script>
+  </head>
+
+  <body>
+
+    <div ng-view></div>
+
+  </body>
+</html>
