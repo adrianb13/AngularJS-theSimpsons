@@ -3,7 +3,7 @@ angular
   .config(["$routeProvider", 
     config = ($routeProvider) => {
       $routeProvider
-        .when("/fam", {
+        .when("/", {
           template: "<simpsons-list><simpsons-list>"
         })
         .when("/fam/:id", {
@@ -12,6 +12,6 @@ angular
         .when("/show", {
           template: "<show-list><show-list>"
         })
-        .otherwise("/fam");
+        .otherwise("/");
     }  
 ]);
