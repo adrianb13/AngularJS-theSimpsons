@@ -1,0 +1,14 @@
+{
+  "scripts": [
+      "app/app.module.js",
+      "app/app.config.js",
+      "app/simpsons-list/simpsons-list.module.js",
+      "app/simpsons-list/simpsons-list.component.js",
+      "app/simpsons-detail/simpsons-detail.module.js",
+      "app/simpsons-detail/simpsons-detail.component.js",
+      "app/show-list/show-list.module.js",
+      "app/show-list/show-list.component.js",
+      "app/nav1/nav1.module.js",
+      "app/nav1/nav1.component.js"
+  ]
+}
