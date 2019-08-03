@@ -1,0 +1,23 @@
+<nav1></nav1>
+<div class="iBack">
+  <div class="iBox">
+    <div class="iBox2">
+      <img ng-src="{{$ctrl.simpson.image}}" class="iBox3" />
+    </div>
+    <div class="font">{{$ctrl.simpson.name}}</div>
+  </div>
+  <div class="dBox">
+    <div class="dBox2">
+      <h2 class="desc">Full Name:</h2>
+      <div class="font2">{{$ctrl.simpson.fullname}}</div>
+      <h2 class="desc">Description:</h2>
+      <div class="font2 fjust">{{$ctrl.simpson.description}}</div>
+    </div>
+    <div class="dBox2">
+      <h2 class="desc">Random Facts:</h2>
+      <div ng-repeat="fact in $ctrl.facts" class="font2 flt">
+        <div><span class="blue">&#9755 </span> {{fact.fact}}</div>
+      </div>
+    </div>
+  </div>
+</div>
