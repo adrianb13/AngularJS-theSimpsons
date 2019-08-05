@@ -23,5 +23,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/adrianb13/theSimpsons/issues"
-  }
+  },
+  "homepage": "https://the-simpsons-angularjs.herokuapp.com/"
 }
