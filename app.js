@@ -9,5 +9,5 @@ app.get('/', function (req, res) {
 
 app.use(express.static("./app")); // set static files location, in this case the route, add a file name if not
 app.listen(PORT, function () {
-  console.log("Listening on port 8000");
+  console.log("Listening on port:" + PORT);
 });
