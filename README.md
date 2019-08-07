@@ -42,6 +42,7 @@ node app.js
 It will return the localhost port the app can be viewed on in your preferred browser. It should be localhost:8000/ otherwise follow the port listed in your console.  In this example, you should be entering localhost:8000/ in your browser url.
 
 *** Structuring of App Code/Folders ***
+
 You will land on the home page.  Each sectional component has it's own dedicated folder with the "app" folder such as the Nav Bar held within the "nav1" folder.
 
 app ----
