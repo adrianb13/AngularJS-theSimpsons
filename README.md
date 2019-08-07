@@ -46,17 +46,25 @@ It will return the localhost port the app can be viewed on in your preferred bro
 You will land on the home page.  Each sectional component has it's own dedicated folder with the "app" folder such as the Nav Bar held within the "nav1" folder.
 
 app ----
+
        / nav1
+       
        / show-list
+       
        / simpsons-detail
+       
        / simpsons-list
+       
        index.html
        
 Each component is structured like so:
 
 nav1 ----
+
         / nav1.component.js
+        
         / nav1.html
+        
         / nav1.module.js
         
 So when viewing a component, you are able to view the details of what each component is doing. You can view any component dependencies in the .module.js file. You can view the controller and functionality in the .component.js file.  The html layout is listed in the .html file. I've set up the web app where basically each component has a dedicated page in the app. But they can be combined and referenced in each other's components with very minimal code changes based on this structure.  An example is the Nav Bar being referenced in the other components and injected where I wanted it represented.  On the landing page, the Nav Bar is in the middle, the other pages have it at the top.
