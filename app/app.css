@@ -174,7 +174,7 @@ a {
 .fjust {
   text-align: justify;
 }
-.flt {
+.flt, .flt2 {
   text-align: left;
 }
 .blue {
@@ -287,12 +287,39 @@ a {
     padding: 80px 0 60px 0;
   }
   .epH {
-    font-size: 35px;
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto 10px auto; 
   }
   .lbl {
     font-size: 25px;
   }
   .select {
     font-size: 100%;
+  }
+  .flt {
+    text-align: left;
+    width: 66%;
+    margin-left: 17%;
+  }
+  .flt2 {
+    text-align: left;
+    width: 100%;
+    
+  }
+  .iBox3 {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    border: 5px solid lightblue;
+  }
+  .iBox {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .iBox2 {
+    margin: 30px auto 10px auto;
   }
 }
