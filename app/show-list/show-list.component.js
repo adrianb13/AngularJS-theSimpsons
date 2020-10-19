@@ -20,13 +20,13 @@ angular
           $http.get("https://www.omdbapi.com/?t=the+simpsons&y=&season=" + info.season.season + "&episode=" + info.ep + "&plot=short&apikey=trilogy")
             .then(res => {
               this.episode = res.data;
-              
+              console.log(this.episode)
               //If there is a valid result - show results
-              if(!this.episode.Error) {
+              if(!this.episode.Error && this.episode.Plot !== "N/A") {
                 this.result = true;
 
               //If no result from API, try to retrieve from custom JSON.
-              } else if (this.episode.Error) {
+              } else if (this.episode.Error || this.episode.Plot === "N/A") {
                 $http.get("assets/data/missing.json")
                 .then(res => {
                   let sfil = res.data.filter(miss => info.season.season == miss.season && info.ep == miss.episode);
