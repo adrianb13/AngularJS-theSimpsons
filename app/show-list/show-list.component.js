@@ -20,7 +20,6 @@ angular
           $http.get("https://www.omdbapi.com/?t=the+simpsons&y=&season=" + info.season.season + "&episode=" + info.ep + "&plot=short&apikey=trilogy")
             .then(res => {
               this.episode = res.data;
-              console.log(this.episode)
               //If there is a valid result - show results
               if(!this.episode.Error && this.episode.Plot !== "N/A") {
                 this.result = true;

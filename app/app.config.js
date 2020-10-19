@@ -1,7 +1,7 @@
 angular
   .module("simpsonsApp")
-  .config(["$routeProvider", 
-    config = ($routeProvider) => {
+  .config(["$routeProvider", "$locationProvider",
+    config = ($routeProvider, $locationProvider) => {
       $routeProvider
         .when("/", {
           template: "<simpsons-list><simpsons-list>"
@@ -13,5 +13,6 @@ angular
           template: "<show-list><show-list>"
         })
         .otherwise("/");
+      $locationProvider.html5Mode(true).hashPrefix('');
     }  
 ]);

@@ -24,12 +24,18 @@ body{
   margin: 0 auto;
 }
 #intro {
-  width: 402px;
+  width: 400px;
   margin: 20px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 iframe {
   width: 400px; 
   height: 225px;
+
 }
 .nav {
   width: 100%;
