@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+    "node": "16.14"
+  },
   "dependencies": {
     "angular": "^1.7.9",
     "angular-route": "^1.7.8",
